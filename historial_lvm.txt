@@ -1,0 +1,77 @@
+    1  pwd
+    2  exit
+    3  exit 
+    4  sudo fdisk -l
+    5  exit
+    6  sudo fdisk -l
+    7  exit
+    8  sudo fdisk -l
+    9  exit
+   10  sudo fdisk -l
+   11  sudo fdisk
+   12  fdisk --help
+   13  sudo fdisk /dev/sdd
+   14  free
+   15  free -h
+   16  sudo mkswap /dev/sdd1
+   17  free -h
+   18  sudo swapon /dev/sdd1 
+   19  free -h
+   20  swapon -s
+   21  sudo fdisk /dev/sdd
+   22  sudo fdisk -l
+   23  sudo fdisk /dev/sdc
+   24  sudo fdisk -l
+   25  sudo fdisk /dev/sdc
+   26  sudo wipefs -a /dev/sdc1
+   27  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   28  sudo pvs
+   29  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2 
+   30  vgs
+   31  sudo vgs
+   32  sudo pvs
+   33  sudo vgcreate vg_web /dev/sdc2 
+   34  pvs
+   35  sudo pvs
+   36  sudo lvcreate -L 1G vg_web -n lv_web1
+   37  sudo lvcreate -L 512M vg_web -n lv_web2
+   38  sudo lvcreate -L 512M vg_web -n lv_web3
+   39  lvs
+   40  sudo lvs
+   41  sudo pvs
+   42  sudo fdisk -l
+   43  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   44  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   45  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   46  sudo lsblk -f
+   47  wq
+   48  exit
+   49  cd repogit
+   50  ls -l
+   51  cd carpeta_compartida
+   52  ls -l
+   53  cd ..
+   54  pwd
+   55  cat vagrant
+   56  cd /repogit
+   57  cd ..
+   58  ls -l
+   59  cd vagrant
+   60  ls
+   61  cd ..
+   62  ls
+   63  cd home
+   64  cd ubuntu
+   65  cd vagrant
+   66  ls -l
+   67  exit
+   68  ls -la
+   69  git clone https://github.com/EmiC2000/TP2_Cabrera_Emiliano.git
+   70  ls -la
+   71  sudo fdisk -l
+   72  cd TP2_Cabrera_Emiliano/
+   73  sudo pvs > pvs.txt
+   74  cat pvs.txt 
+   75  sudo vgs > vgs.txt
+   76  sudo lvs > lvs.txt
+   77  history > historial_lvm.txt
